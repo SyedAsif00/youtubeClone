@@ -19,4 +19,4 @@ export const FetchFromApi = async (url) => {
   return data;
 };
 
-//  sp we have created a helper function here that will make an api request and use the options in every reuest
+// we have created a helper function here that will make an api request and use the options in every reuest

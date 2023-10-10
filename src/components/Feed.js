@@ -2,7 +2,12 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { Box, Stack, Typography } from "@mui/material";
 import { Videos, Sidebar } from "./index";
+import { FetchFromApi } from "./utils/FetchFromApi";
 const Feed = () => {
+  useEffect(() => {
+    FetchFromApi();
+  }, []);
+
   return (
     <Stack sx={{ flexDirection: { sx: "column", md: "row" } }}>
       <Box
